@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate tên của lớp học</title>
+</head>
+<body>
+    <script>
+        function kiemtra(str) {
+            regexp = /^[CAP]+[0-9]{4,}[G-M]$/;
+            if (regexp.test(str)){
+                alert("Tên hợp lệ")
+            } else alert("Tên không hợp lệ")
+        }
+        let ten = prompt("Nhập tên lớp")
+        kiemtra(ten)
+    </script>
+</body>
+</html>
